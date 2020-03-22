@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { css } from "styled-components";
 import { FaBars } from "react-icons/fa";
+import { Link } from "gatsby";
 import { primary, borderColor } from "../../styles/colors";
 import {
   asideWidth,
@@ -54,12 +55,18 @@ export default function Aside() {
   `;
 
   const innerSidebarStyles = css`
-    padding: ${spacingUnit};
+    padding: 0 ${spacingUnit};
     height: 100%;
 
     @media (${mediumLarge}) {
       border-right: 2px solid ${borderColor};
     }
+  `;
+
+  const stickyMenu = css`
+    position: sticky;
+    top: 0;
+    padding: ${spacingUnit} 0;
   `;
 
   const buttonStyles = css`
@@ -89,9 +96,32 @@ export default function Aside() {
   return (
     <>
       <aside css={sideBarStyles}>
-        <div css={innerSidebarStyles}>TODO</div>
+        <div css={innerSidebarStyles}>
+          <div css={stickyMenu}>
+            <span>calebmchenry.com</span>
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/blog">Articles</Link>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCVFXWl0jiVV8KlBa_eRVPyQ">
+                    Videos
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/calebmchenry">Projects</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </aside>
-      {menuOpen && <div css={scrimStyles} onClick={closeMenu} />}
+      {menuOpen && (
+        // eslint-disable-next-line
+        <div css={scrimStyles} onClick={closeMenu} />
+      )}
       {mobileMenu && (
         <button type="button" css={buttonStyles} onClick={openMenu}>
           <FaBars />

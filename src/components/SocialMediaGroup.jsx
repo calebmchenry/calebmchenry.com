@@ -76,7 +76,7 @@ export default function SocialMediaGroup() {
     <ul css={groupStyles}>
       <li>
         <YouTubeLink href="https://www.youtube.com/channel/UCVFXWl0jiVV8KlBa_eRVPyQ">
-          <FaYoutube /> Videos
+          <FaYoutube /> YouTube
         </YouTubeLink>
       </li>
       <li>

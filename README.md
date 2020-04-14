@@ -1,4 +1,3 @@
-# calebmchenry@gmail.com
+# Website
 
-1. `npm install`
-2. `npm start`
+Hello welcome to the source code for [calebmchenry.com](https://calebmchenry.com). Please feel free to browse around! 

@@ -1,7 +1,7 @@
-import React from "react";
-import { css } from "styled-components";
-import { spacingUnit, medium, xLarge } from "../styles/variables";
-import { secondaryTextColor } from "../styles/colors";
+import React from 'react';
+import { css } from 'styled-components';
+import { spacingUnit, medium, xLarge } from '../styles/variables';
+import { secondaryTextColor } from '../styles/colors';
 
 function Greeting() {
   const containerStyles = css`
@@ -25,7 +25,7 @@ function Greeting() {
   `;
 
   const myNameIsStyles = css`
-    font-family: "Pacifico", cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 2.4rem;
     color: ${secondaryTextColor};
   `;
@@ -54,7 +54,7 @@ function Greeting() {
   return (
     <div css={containerStyles}>
       <h2 css={helloHeadingStyles}>
-        Hello!{" "}
+        Hello!{' '}
         <span role="img" aria-label="wave">
           👋
         </span>
@@ -63,10 +63,10 @@ function Greeting() {
       <h1 css={nameHeadingStyles}>Caleb McHenry</h1>
       <span css={statementStyles}>I write code for fun!</span>
       <p css={messageStyles}>
-        I enjoy learning, teaching, and coding. I mostly do web development with{" "}
+        I enjoy learning, teaching, and coding. I mostly do web development with{' '}
         <a href="https://www.typescriptlang.org/">JavaScript</a>, but I have
-        been known to dabble in other languages like{" "}
-        <a href="https://www.rust-lang.org/">Rust</a> and{" "}
+        been known to dabble in other languages like{' '}
+        <a href="https://www.rust-lang.org/">Rust</a> and{' '}
         <a href="https://golang.org/">Golang.</a>
       </p>
     </div>

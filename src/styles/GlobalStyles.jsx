@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import { primaryTextColor, neutral0, primary } from "./colors";
-import { footerHeight } from "./variables";
+import { createGlobalStyle } from 'styled-components';
+import { primaryTextColor, neutral0, primary } from './colors';
+import { footerHeight } from './variables';
 
 const GlobalStyles = createGlobalStyle`
     html {

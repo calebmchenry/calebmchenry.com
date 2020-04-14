@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { FaYoutube, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { secondary } from "../../styles/colors";
-import { footerHeight } from "../../styles/variables";
+import React from 'react';
+import styled from 'styled-components';
+import { FaYoutube, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { secondary } from '../../styles/colors';
+import { footerHeight } from '../../styles/variables';
 
 export default function Footer() {
   const FooterEl = styled.footer`

@@ -1,15 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { css } from "styled-components";
-import GlobalStyles from "../../styles/GlobalStyles";
-import Footer from "./Footer";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { css } from 'styled-components';
+import GlobalStyles from '../../styles/GlobalStyles';
+import Footer from './Footer';
 import {
   medium,
   mediumLarge,
   spacingUnit,
-  footerHeight
-} from "../../styles/variables";
-import Aside from "./Aside";
+  footerHeight,
+} from '../../styles/variables';
+import Aside from './Aside';
 
 const containerStyles = css`
   display: flex;
@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

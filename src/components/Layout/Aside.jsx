@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { css } from "styled-components";
-import { FaBars } from "react-icons/fa";
-import { Link } from "gatsby";
-import { primary, borderColor } from "../../styles/colors";
+import React, { useEffect, useState } from 'react';
+import { css } from 'styled-components';
+import { FaBars } from 'react-icons/fa';
+import { Link } from 'gatsby';
+import { primary, borderColor } from '../../styles/colors';
 import {
   asideWidth,
   mediumLarge,
   spacingUnit,
   footerHeight,
-  medium
-} from "../../styles/variables";
+  medium,
+} from '../../styles/variables';
 
 export default function Aside() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,9 +21,9 @@ export default function Aside() {
       setWindowWidth(window.innerWidth);
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   });
 

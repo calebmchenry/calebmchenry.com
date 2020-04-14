@@ -42,6 +42,7 @@ module.exports = {
         path: `${__dirname}/src/blog/`,
       },
     },
-    `gatsby-plugin-mdx`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-feed`,
   ],
 };

@@ -1,13 +1,13 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from 'react';
+import styled, { css } from 'styled-components';
 import {
   FaYoutube,
   FaGithub,
   FaLinkedin,
   FaTwitter,
-  FaBlog
-} from "react-icons/fa";
-import { spacingUnit, medium, large } from "../styles/variables";
+  FaBlog,
+} from 'react-icons/fa';
+import { spacingUnit, medium, large } from '../styles/variables';
 
 export default function SocialMediaGroup() {
   const groupStyles = css`

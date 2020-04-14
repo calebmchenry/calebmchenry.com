@@ -1,11 +1,14 @@
-import React from "react";
-import Layout from "../components/Layout/Layout";
-import SEO from "../components/seo";
+import React from 'react';
+import Layout from '../components/Layout/Layout';
+import SEO from '../components/seo';
 
 const BlogPage = () => (
   <Layout>
     <SEO title="Blog" />
-    <h1>Blog</h1>
+    <h1>All posts</h1>
+    {/* TODO search */}
+    {/* TODO list posts */}
+    {/* TODO pagination */}
   </Layout>
 );
 

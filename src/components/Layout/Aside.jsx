@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import { css } from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'gatsby';
@@ -12,7 +12,7 @@ import {
 } from '../../styles/variables';
 
 export default function Aside() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const mobileMenu = windowWidth < 1024;
 
@@ -25,7 +25,11 @@ export default function Aside() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  });
+  }, []);
+
+  useLayoutEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
 
   function openMenu() {
     setMenuOpen(true);

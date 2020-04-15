@@ -9,7 +9,7 @@ export default function BlogTemplate({ data }) {
   return (
     <Layout>
       <article>
-        <span>{frontmatter.date}</span>
+        <span>{frontmatter.published}</span>
         <h1>{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </article>
@@ -22,7 +22,7 @@ BlogTemplate.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
-        date: PropTypes.string,
+        published: PropTypes.string,
       }),
       html: PropTypes.string,
     }),
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        published(formatString: "MMMM DD, YYYY")
         path
         title
       }

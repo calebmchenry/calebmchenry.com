@@ -17,14 +17,14 @@ export default function Template({ data }) {
   );
 }
 
-export const pageQuery = graphql`
-  query ($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        slug
-        title
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query ($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       html
+//       frontmatter {
+//         slug
+//         title
+//       }
+//     }
+//   }
+// `;

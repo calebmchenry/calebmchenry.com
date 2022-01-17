@@ -6,13 +6,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `articles`,
-        path: `${__dirname}/src/articles/`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `articles`,
+    //     path: `${__dirname}/src/articles/`,
+    //   },
+    // },
     "gatsby-transformer-remark",
     "gatsby-plugin-emotion",
   ],

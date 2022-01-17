@@ -1,6 +1,11 @@
 import React from "react";
 import { Layout } from "../Layout";
 
+import styled from "@emotion/styled";
+const Accent = styled.span`
+  color: #6b7c9b;
+`;
+
 const Resume = () => {
   return (
     <Layout>
@@ -12,19 +17,22 @@ const Resume = () => {
         https://github.com/calebmchenry
       </a>
       <h2>Education</h2>
-      <b>West Virginia University</b> - Bachelor's of Computer Science - May 2018 GPA -
-      3.94
+      <b>West Virginia University</b> - Bachelor's of Computer Science
+      <p>
+        <Accent>May 2018 • GPA - 3.94</Accent>
+      </p>
+      <p></p>
       <h2>Skills</h2>
       <p>
-        <b>Languages: </b> Typescript, JavaScript, HTML, CSS, Go, Haskell,
-        Java, Rust
+        <b>Languages: </b> Typescript, JavaScript, HTML, CSS, Go, Haskell, Java,
+        Rust
       </p>
       <p>
         <b>Frameworks: </b> React, Jest, Gatsby
       </p>
       <p>
-        <b>Technologies: </b> HTTP, WebSocket, GraphQL, git, Jenkins,
-        Jira, Docker
+        <b>Technologies: </b> HTTP, WebSocket, GraphQL, git, Jenkins, Jira,
+        Docker
       </p>
       <p>
         <b>Interests: </b> Automation, Testing, Functional Programming,
@@ -38,8 +46,12 @@ const Resume = () => {
         <span>Soft Skills: </span> Public Speaking, Teaching, and Leadership
       </p>
       <h2>Experience/ Achievements</h2>
-      <p><b>Leidos, Morgantown WV </b></p>
-      <p>Software Engineer III • Feb 2021 - Present</p>
+      <p>
+        <b>Leidos, Morgantown WV </b>
+      </p>
+      <p>
+        Software Engineer III <Accent>• Feb 2021 - Present</Accent>
+      </p>
       <ul>
         <li>Developed React web applications and Java backend services</li>
         <li>Team lead for internal JavaScript Framework</li>
@@ -68,10 +80,18 @@ const Resume = () => {
           </li>
         </ul>
       </ul>
-      <p>Software Engineer II • July 2020</p>
-      <p>Jr. Software Engineer • July 2018</p>
-      <p>Software Engineering Tech • Aug 2017</p>
-      <p>Software Engineering Intern • May 2016</p>
+      <p>
+        Software Engineer II <Accent>• July 2020</Accent>
+      </p>
+      <p>
+        Jr. Software Engineer <Accent>• July 2018</Accent>
+      </p>
+      <p>
+        Software Engineering Tech <Accent>• Aug 2017</Accent>
+      </p>
+      <p>
+        Software Engineering Intern <Accent>• May 2016</Accent>
+      </p>
     </Layout>
   );
 };

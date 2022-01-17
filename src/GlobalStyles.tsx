@@ -1,5 +1,6 @@
 import React from "react";
 import { css, Global } from "@emotion/react";
+export const primaryTextColor = "#253858";
 const global = css`
   html {
     font-size: 10px;
@@ -11,6 +12,7 @@ const global = css`
       "Helvetica Neue", sans-serif;
     margin: 0;
     font-size: 2rem;
+    color: ${primaryTextColor};
   }
 
   *,

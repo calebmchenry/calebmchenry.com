@@ -1,4 +1,6 @@
 import React from "react";
+import { css } from "@emotion/react";
+import { StaticImage } from "gatsby-plugin-image";
 import { Layout } from "../Layout";
 
 const IndexPage = () => {
@@ -6,11 +8,32 @@ const IndexPage = () => {
     <>
       <Layout>
         <title>Home | Caleb McHenry</title>
+        <div
+          css={css`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          `}
+        >
+          <StaticImage
+            css={css`
+              border-radius: 50%;
+              height: 200px;
+              width: 200px;
+              margin: 0 auto;
+            `}
+            width={200}
+            height={200}
+            src="../images/sunflower-crop.jpg"
+            alt="Caleb in a sunflower field"
+          ></StaticImage>
+        </div>
         <h1>
           Hello{" "}
           <span role="img" aria-label="Wave emoji">
             👋
-          </span>{" "}
+          </span>
+          {", "}
           my name is Caleb McHenry
         </h1>
         <p>

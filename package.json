@@ -1,5 +1,5 @@
 {
-  "name": "caleb-mc-henry",
+  "name": "calebmchenry.com",
   "version": "1.0.0",
   "private": true,
   "description": "Caleb McHenry",
@@ -30,6 +30,7 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/react": "^17.0.38",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   }
